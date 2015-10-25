@@ -2,7 +2,6 @@ package com.garcilomanuel.cleangames.app.di;
 
 import android.content.Context;
 import com.garcilomanuel.cleangames.app.base.MVPCleanGamesApplication;
-import com.garcilomanuel.cleangames.domain.repository.PlatformRepository;
 import com.garcilomanuel.cleangames.domain.repository.PlatformRepositoryImp;
 import com.garcilomanuel.cleangames.ui.main.presenter.MainPresenterImp;
 import com.garcilomanuel.cleangames.ui.main.view.MainActivity;
@@ -20,6 +19,7 @@ import javax.inject.Singleton;
         NavigatorModule.class,
         DataSourceModule.class,
         RepositoryModule.class,
+        MapperModule.class,
         PresenterModule.class
     },
     injects = {

@@ -1,5 +1,6 @@
 package com.garcilomanuel.cleangames.domain.repository;
 
+import android.util.Log;
 import com.garcilomanuel.cleangames.data.GameDataSource;
 import com.garcilomanuel.cleangames.domain.model.Platform;
 import java.util.HashMap;
@@ -10,6 +11,8 @@ import java.util.Map;
  * Created by Manuel García.
  */
 public class PlatformRepositoryImp implements PlatformRepository {
+
+  private final String TAG = this.getClass().getSimpleName();
 
   private GameDataSource gameDataSource;
   private Map<String, Platform> platforms;
