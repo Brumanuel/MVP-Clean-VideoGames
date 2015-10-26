@@ -8,12 +8,6 @@ import java.util.List;
  */
 public interface PlatformRepository {
 
-  void getPlatforms(Callback callback);
+  List<Platform> getPlatforms();
 
-  interface Callback {
-
-    void onSuccess(List<Platform> platforms);
-
-    void onError(String error);
-  }
 }

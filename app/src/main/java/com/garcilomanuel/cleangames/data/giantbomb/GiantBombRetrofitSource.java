@@ -5,6 +5,8 @@ import com.garcilomanuel.cleangames.data.GameDataSource;
 import com.garcilomanuel.cleangames.data.giantbomb.mapper.GiantBombToDomainMapper;
 import com.garcilomanuel.cleangames.data.giantbomb.model.Data;
 import com.garcilomanuel.cleangames.data.retrofit.GiantBombService;
+import com.garcilomanuel.cleangames.domain.model.Platform;
+import java.util.List;
 import retrofit.RestAdapter;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
@@ -32,18 +34,8 @@ public class GiantBombRetrofitSource implements GameDataSource {
   }
 
   @Override
-  public void getPlatforms(final Callback callback) {
-    giantBombService.getPlatforms(ConfigGiantBombApi.API_KEY, ConfigGiantBombApi.API_FORMAT,
-        new retrofit.Callback<Data>() {
-          @Override
-          public void success(Data data, Response response) {
-            callback.onSuccess(giantBombToDomainMapper.mapResutlsToPlatforms(data.getResults()));
-          }
-
-          @Override
-          public void failure(RetrofitError error) {
-            Log.e(TAG, error.getMessage());
-          }
-        });
+  public List<Platform> getPlatforms() {
+    Data data = giantBombService.getPlatforms(ConfigGiantBombApi.API_KEY, ConfigGiantBombApi.API_FORMAT);
+    return giantBombToDomainMapper.mapResutlsToPlatforms(data.getResults());
   }
 }

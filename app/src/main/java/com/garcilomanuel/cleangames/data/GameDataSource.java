@@ -8,12 +8,5 @@ import java.util.List;
  */
 public interface GameDataSource {
 
-  void getPlatforms(Callback callback);
-
-  public interface Callback {
-
-    void onSuccess(List<Platform> platforms);
-
-    void onError(String errorMessage);
-  }
+  List<Platform> getPlatforms();
 }

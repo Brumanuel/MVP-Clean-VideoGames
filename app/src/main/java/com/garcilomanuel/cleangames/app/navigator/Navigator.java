@@ -7,7 +7,7 @@ import android.app.Activity;
  */
 public abstract class Navigator {
 
-  Activity activity;
+  private Activity activity;
 
   public Activity getActivity() {
     return activity;
