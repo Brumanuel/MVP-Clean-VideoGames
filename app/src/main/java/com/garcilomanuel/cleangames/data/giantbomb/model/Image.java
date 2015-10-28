@@ -5,67 +5,67 @@ package com.garcilomanuel.cleangames.data.giantbomb.model;
  */
 public class Image {
 
-  private String iconUrl;
-  private String mediumUrl;
-  private String screenUrl;
-  private String smallUrl;
-  private String superUrl;
-  private String thumbUrl;
-  private String tinyUrl;
+  private String icon_url;
+  private String medium_url;
+  private String screen_url;
+  private String small_url;
+  private String super_url;
+  private String thumb_url;
+  private String tiny_url;
 
-  public String getIconUrl() {
-    return iconUrl;
+  public String getIcon_url() {
+    return icon_url;
   }
 
-  public void setIconUrl(String iconUrl) {
-    this.iconUrl = iconUrl;
+  public void setIcon_url(String icon_url) {
+    this.icon_url = icon_url;
   }
 
-  public String getMediumUrl() {
-    return mediumUrl;
+  public String getMedium_url() {
+    return medium_url;
   }
 
-  public void setMediumUrl(String mediumUrl) {
-    this.mediumUrl = mediumUrl;
+  public void setMedium_url(String medium_url) {
+    this.medium_url = medium_url;
   }
 
-  public String getScreenUrl() {
-    return screenUrl;
+  public String getScreen_url() {
+    return screen_url;
   }
 
-  public void setScreenUrl(String screenUrl) {
-    this.screenUrl = screenUrl;
+  public void setScreen_url(String screen_url) {
+    this.screen_url = screen_url;
   }
 
-  public String getSmallUrl() {
-    return smallUrl;
+  public String getSmall_url() {
+    return small_url;
   }
 
-  public void setSmallUrl(String smallUrl) {
-    this.smallUrl = smallUrl;
+  public void setSmall_url(String small_url) {
+    this.small_url = small_url;
   }
 
-  public String getSuperUrl() {
-    return superUrl;
+  public String getSuper_url() {
+    return super_url;
   }
 
-  public void setSuperUrl(String superUrl) {
-    this.superUrl = superUrl;
+  public void setSuper_url(String super_url) {
+    this.super_url = super_url;
   }
 
-  public String getThumbUrl() {
-    return thumbUrl;
+  public String getThumb_url() {
+    return thumb_url;
   }
 
-  public void setThumbUrl(String thumbUrl) {
-    this.thumbUrl = thumbUrl;
+  public void setThumb_url(String thumb_url) {
+    this.thumb_url = thumb_url;
   }
 
-  public String getTinyUrl() {
-    return tinyUrl;
+  public String getTiny_url() {
+    return tiny_url;
   }
 
-  public void setTinyUrl(String tinyUrl) {
-    this.tinyUrl = tinyUrl;
+  public void setTiny_url(String tiny_url) {
+    this.tiny_url = tiny_url;
   }
 }

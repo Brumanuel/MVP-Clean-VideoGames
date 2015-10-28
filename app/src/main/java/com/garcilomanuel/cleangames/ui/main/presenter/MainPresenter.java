@@ -1,6 +1,7 @@
 package com.garcilomanuel.cleangames.ui.main.presenter;
 
 import com.garcilomanuel.cleangames.app.base.BasePresenter;
+import com.garcilomanuel.cleangames.domain.model.Platform;
 import com.garcilomanuel.cleangames.ui.main.view.MainView;
 
 /**
@@ -8,5 +9,4 @@ import com.garcilomanuel.cleangames.ui.main.view.MainView;
  */
 public abstract class MainPresenter extends BasePresenter<MainView> {
 
-  public abstract void loadPlatforms();
 }

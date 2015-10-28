@@ -3,8 +3,11 @@ package com.garcilomanuel.cleangames.app.di;
 import android.content.Context;
 import com.garcilomanuel.cleangames.app.base.MVPCleanGamesApplication;
 import com.garcilomanuel.cleangames.domain.repository.PlatformRepositoryImp;
+import com.garcilomanuel.cleangames.ui.detail.view.DetailContainerActivity;
+import com.garcilomanuel.cleangames.ui.detail.view.DetailViewFragment;
 import com.garcilomanuel.cleangames.ui.main.presenter.MainPresenterImp;
 import com.garcilomanuel.cleangames.ui.main.view.MainActivity;
+import com.garcilomanuel.cleangames.ui.platforms.view.PlatformsViewFragment;
 import dagger.Module;
 import dagger.Provides;
 import javax.inject.Singleton;
@@ -27,7 +30,10 @@ import javax.inject.Singleton;
         MVPCleanGamesApplication.class,
         PlatformRepositoryImp.class,
         MainActivity.class,
-        MainPresenterImp.class
+        MainPresenterImp.class,
+        PlatformsViewFragment.class,
+        DetailContainerActivity.class,
+        DetailViewFragment.class
     },
     library = true)
 

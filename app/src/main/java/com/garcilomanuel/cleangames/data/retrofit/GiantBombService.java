@@ -9,6 +9,6 @@ import retrofit.http.Query;
  */
 public interface GiantBombService {
 
-  @GET("/platforms?sort=release_date:asc&field_list=id,image,name")
+  @GET("/platforms?field_list=id,image,name,release_date,deck")
   Data getPlatforms(@Query("api_key") String apiKey, @Query("format") String format);
 }

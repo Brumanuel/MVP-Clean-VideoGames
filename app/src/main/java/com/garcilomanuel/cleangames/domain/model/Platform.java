@@ -7,10 +7,11 @@ import java.util.Date;
  */
 public class Platform {
 
-  private int id;
-  private String name;
-  private Date release_date;
-  private Image image;
+  protected int id;
+  protected String name;
+  protected String description;
+  protected Date release_date;
+  protected Image image;
 
   public Platform() {
   }
@@ -21,6 +22,14 @@ public class Platform {
 
   public void setId(int id) {
     this.id = id;
+  }
+
+  public String getDescription() {
+    return description;
+  }
+
+  public void setDescription(String description) {
+    this.description = description;
   }
 
   public String getName() {

@@ -10,4 +10,11 @@ public interface PlatformRepository {
 
   List<Platform> getPlatforms();
 
+  Platform getPlafotm(int id);
+
+  void loadPlatforms();
+
+  void addPlatform(Platform platform);
+
+  void addPlatforms(List<Platform> platforms);
 }

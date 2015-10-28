@@ -32,13 +32,13 @@ public class GetPlatformsImp extends AbstractInteractor implements GetPlatforms 
     List<Platform> platforms;
     try {
       platforms = platformRepository.getPlatforms();
-      doSuccess(platforms);
+      onSuccess(platforms);
     } catch (Exception e) {
-      doError(e);
+      onError(e);
     }
   }
 
-  private void doSuccess(final List<Platform> platforms) {
+  private void onSuccess(final List<Platform> platforms) {
     executeInMainThread(new Runnable() {
       @Override
       public void run() {
@@ -47,7 +47,7 @@ public class GetPlatformsImp extends AbstractInteractor implements GetPlatforms 
     });
   }
 
-  private void doError(final Throwable throwable) {
+  private void onError(final Throwable throwable) {
     executeInMainThread(new Runnable() {
       @Override
       public void run() {

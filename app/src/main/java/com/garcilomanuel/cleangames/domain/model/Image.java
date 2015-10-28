@@ -1,5 +1,6 @@
 package com.garcilomanuel.cleangames.domain.model;
 
+
 /**
  * Created by Manuel García.
  */
