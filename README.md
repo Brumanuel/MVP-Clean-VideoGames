@@ -11,8 +11,11 @@ The application is made using a api cloud of video games, for explain the use of
 - **Button Library:** [FloatingActionButton](https://github.com/makovkastar/FloatingActionButton) by [Melnykov Olenksandr](https://github.com/makovkastar)
 
 ### Screenshots
-
-
+## Potrait
+![alt text](https://raw.githubusercontent.com/Brumanuel/MVP-Clean-VideoGames/master/art/screenshot1.png "")
+![alt text](https://raw.githubusercontent.com/Brumanuel/MVP-Clean-VideoGames/master/art/screenshot3.png "")
+## Landscape
+![alt text](https://raw.githubusercontent.com/Brumanuel/MVP-Clean-VideoGames/master/art/screenshot2.png "")
 ### Develop by Manuel García López
 [garcilomanuel@gmail.com](mailto:garcilomanuel@gmail.com)
 - Twitter [@brumanuel](https://twitter.com/Brumanuel)
