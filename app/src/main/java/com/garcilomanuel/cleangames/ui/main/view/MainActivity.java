@@ -6,6 +6,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import com.garcilomanuel.cleangames.R;
 import com.garcilomanuel.cleangames.app.base.BaseActivity;
+import com.garcilomanuel.cleangames.ui.detail.view.DetailViewFragment;
 import com.garcilomanuel.cleangames.ui.main.presenter.MainPresenter;
 import com.garcilomanuel.cleangames.ui.platforms.view.PlatformsViewFragment;
 import javax.inject.Inject;
@@ -26,7 +27,7 @@ public class MainActivity extends BaseActivity implements MainView {
     ButterKnife.bind(this);
     presenter.setView(this);
     initToolBar();
-    showPlatformsView();
+    presenter.onViewCreated();
   }
 
   private void initToolBar() {
@@ -38,12 +39,13 @@ public class MainActivity extends BaseActivity implements MainView {
   public void showPlatformsView() {
     PlatformsViewFragment platformsViewFragment = new PlatformsViewFragment();
     getFragmentManager().beginTransaction()
-        .add(R.id.platform_frame, platformsViewFragment)
+        .replace(R.id.platform_frame, platformsViewFragment)
         .commit();
   }
 
   @Override
   public void showDetailsPlatformView(int idPlatform) {
-
+    DetailViewFragment detailViewFragment = DetailViewFragment.newInstance(idPlatform);
+    getFragmentManager().beginTransaction().replace(R.id.detail_frame, detailViewFragment).commit();
   }
 }

@@ -42,7 +42,7 @@ public class PlatformsPresenterImp extends PlatformsPresenter {
 
       @Override
       public void onError(Throwable throwable) {
-
+        view.showError(throwable.getMessage());
       }
     });
   }
@@ -57,6 +57,7 @@ public class PlatformsPresenterImp extends PlatformsPresenter {
 
       @Override
       public void onError(Throwable throwable) {
+        view.showError(throwable.getMessage());
         view.stopLoading();
       }
     });

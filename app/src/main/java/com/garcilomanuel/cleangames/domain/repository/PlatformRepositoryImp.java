@@ -9,6 +9,9 @@ import java.util.Map;
 
 /**
  * Created by Manuel García.
+ *
+ * Repository of plaftforms, in this implementation is for use with a cloud api, but when the data
+ * is loaded we can get platforms from the Map.
  */
 public class PlatformRepositoryImp implements PlatformRepository {
 
@@ -32,6 +35,11 @@ public class PlatformRepositoryImp implements PlatformRepository {
   @Override
   public Platform getPlafotm(int id) {
     return platforms.get(id);
+  }
+
+  @Override
+  public void deletePlatform(int id) {
+    platforms.remove(id);
   }
 
   @Override

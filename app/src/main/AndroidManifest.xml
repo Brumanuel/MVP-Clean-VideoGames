@@ -6,7 +6,7 @@
 
   <application
       android:allowBackup="true"
-      android:name=".app.base.MVPCleanGamesApplication"
+      android:name=".app.MVPCleanGamesApplication"
       android:label="@string/app_name"
       android:icon="@mipmap/ic_launcher"
       android:supportsRtl="true"

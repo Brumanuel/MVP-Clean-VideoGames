@@ -1,53 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="10"
+    android:background="@color/backgroundDetailsView"
     >
-
-  <ImageView
-      android:id="@+id/iv_detail"
+  <LinearLayout
+      android:orientation="vertical"
       android:layout_width="match_parent"
-      android:layout_height="0dp"
-      android:layout_weight="6"
-      android:layout_marginTop="@dimen/margin_content_areas"
-      />
-  <RelativeLayout
-      android:layout_width="match_parent"
-      android:layout_height="0dp"
-      android:layout_weight="4"
-      android:layout_margin="@dimen/margin_content_areas"
+      android:layout_height="wrap_content"
       >
-    <TextView
-        android:id="@+id/tv_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/colorText"
+    <ImageView
+        android:id="@+id/iv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
         />
-
-    <TextView
-        android:id="@+id/tv_description"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_name"
-        android:textColor="@color/colorText"
-        />
+        android:layout_margin="@dimen/margin_content_areas"
+        >
+      <TextView
+          android:id="@+id/tv_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="22sp"
+          android:textStyle="bold"
+          android:layout_centerHorizontal="true"
+          android:textColor="@color/colorTextDetailsView"
+          />
 
-    <TextView
-        android:id="@+id/tv_age"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:textStyle="italic"
+      <TextView
+          android:id="@+id/tv_description"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/tv_name"
+          android:textColor="@color/colorTextDetailsView"
+          android:layout_marginLeft="@dimen/double_margin_content_areas"
+          android:layout_marginRight="@dimen/double_margin_content_areas"
+          />
 
-        />
+      <TextView
+          android:id="@+id/tv_age"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/tv_description"
+          android:layout_alignParentRight="true"
+          android:textStyle="italic"
+          android:textColor="@color/colorTextDetailsView"
+          />
 
-  </RelativeLayout>
-
-
-</LinearLayout>
+    </RelativeLayout>
+  </LinearLayout>
+</ScrollView>

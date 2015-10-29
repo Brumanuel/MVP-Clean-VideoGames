@@ -12,6 +12,8 @@ public interface PlatformRepository {
 
   Platform getPlafotm(int id);
 
+  void deletePlatform(int id);
+
   void loadPlatforms();
 
   void addPlatform(Platform platform);

@@ -2,14 +2,16 @@ package com.garcilomanuel.cleangames.domain.interactor.platform;
 
 import com.garcilomanuel.cleangames.app.executor.InteractorExecutor;
 import com.garcilomanuel.cleangames.app.executor.MainThreadExecutor;
-import com.garcilomanuel.cleangames.domain.interactor.AbstractInteractor;
+import com.garcilomanuel.cleangames.app.base.BaseInteractor;
 import com.garcilomanuel.cleangames.domain.model.Platform;
 import com.garcilomanuel.cleangames.domain.repository.PlatformRepository;
 
 /**
  * Created by Manuel García.
+ *
+ * This interactor get one platform from repository of platforms, filtered by id.
  */
-public class GetPlatformImp extends AbstractInteractor implements GetPlatform {
+public class GetPlatformImp extends BaseInteractor implements GetPlatform {
 
   private int id;
   private Callback callback;

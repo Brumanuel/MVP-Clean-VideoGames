@@ -5,6 +5,7 @@ import android.os.Looper;
 
 /**
  * Created by Manuel García.
+ *
  */
 public class MainThreadExecutorImp implements MainThreadExecutor {
 

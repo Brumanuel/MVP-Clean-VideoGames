@@ -5,6 +5,9 @@ import com.garcilomanuel.cleangames.domain.model.Platform;
 
 /**
  * Created by Manuel García.
+ *
+ * Navigator have the current activity, if we use in presenters, we can move without have context.
+ * You can change the flow of aplication changing the navigator.
  */
 public abstract class Navigator {
 

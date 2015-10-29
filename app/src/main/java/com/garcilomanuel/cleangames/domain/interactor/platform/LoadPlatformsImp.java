@@ -1,14 +1,16 @@
 package com.garcilomanuel.cleangames.domain.interactor.platform;
 
+import com.garcilomanuel.cleangames.app.base.BaseInteractor;
 import com.garcilomanuel.cleangames.app.executor.InteractorExecutor;
 import com.garcilomanuel.cleangames.app.executor.MainThreadExecutor;
-import com.garcilomanuel.cleangames.domain.interactor.AbstractInteractor;
 import com.garcilomanuel.cleangames.domain.repository.PlatformRepository;
 
 /**
  * Created by Manuel García.
+ *
+ * This interactor cache platforms on repository.
  */
-public class LoadPlatformsImp extends AbstractInteractor implements LoadPlatforms {
+public class LoadPlatformsImp extends BaseInteractor implements LoadPlatforms {
 
   private PlatformRepository platformRepository;
   private Callback callback;
@@ -29,13 +31,13 @@ public class LoadPlatformsImp extends AbstractInteractor implements LoadPlatform
   public void run() {
     try {
       platformRepository.loadPlatforms();
-      doSuccess();
+      onSuccess();
     } catch (Exception e) {
-      doError(e);
+      onError(e);
     }
   }
 
-  private void doSuccess() {
+  private void onSuccess() {
     executeInMainThread(new Runnable() {
       @Override
       public void run() {
@@ -44,7 +46,7 @@ public class LoadPlatformsImp extends AbstractInteractor implements LoadPlatform
     });
   }
 
-  private void doError(final Throwable throwable) {
+  private void onError(final Throwable throwable) {
     executeInMainThread(new Runnable() {
       @Override
       public void run() {

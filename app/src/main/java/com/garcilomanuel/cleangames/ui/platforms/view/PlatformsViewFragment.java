@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import com.garcilomanuel.cleangames.R;
@@ -41,7 +42,6 @@ public class PlatformsViewFragment extends BaseFragment implements PlatformsView
   @Override
   public void onViewCreated(View view, Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
-    ButterKnife.bind(this, view);
     platformsPresenter.setView(this);
     platformsPresenter.onViewCreated();
     initRecyclerView();
@@ -76,6 +76,12 @@ public class PlatformsViewFragment extends BaseFragment implements PlatformsView
   @Override
   public void showPlatforms(List<Platform> platforms) {
     adapter.updatePlatforms(platforms);
+  }
+
+  @Override
+  public void showError(String error) {
+    Toast.makeText(getActivity(), error, Toast.LENGTH_SHORT)
+        .show();
   }
 
   @Override

@@ -4,6 +4,8 @@ import com.garcilomanuel.cleangames.ui.View;
 
 /**
  * Created by Manuel García.
+ *
+ * Base presenter with type heritage.
  */
 public abstract class BasePresenter<T extends View> {
 

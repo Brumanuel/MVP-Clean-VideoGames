@@ -28,6 +28,7 @@ public class DetailPresenterImp extends DetailPresenter {
       @Override
       public void onError(Throwable throwable) {
         Log.e(TAG, throwable.getMessage(), throwable);
+        view.showError(throwable.getMessage());
       }
     });
   }

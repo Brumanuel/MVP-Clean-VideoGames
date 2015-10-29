@@ -9,4 +9,6 @@ import com.garcilomanuel.cleangames.ui.View;
 public interface DetailView extends View {
 
   void showDetail(Platform platform);
+
+  void showError(String error);
 }

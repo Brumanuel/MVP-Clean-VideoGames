@@ -9,4 +9,9 @@ public class MainPresenterImp extends MainPresenter {
 
   public MainPresenterImp() {
   }
+
+  @Override
+  public void onViewCreated() {
+    view.showPlatformsView();
+  }
 }

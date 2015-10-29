@@ -21,9 +21,9 @@
         android:layout_gravity="bottom|right"
         android:layout_margin="16dp"
         android:src="@drawable/ic_action_sort"
-        fab:fab_colorNormal="@color/colorPrimaryDark"
+        fab:fab_colorNormal="@color/colorAccent"
         fab:fab_colorPressed="@color/colorPrimary"
-        fab:fab_colorRipple="@color/colorAccent"
+        fab:fab_colorRipple="@color/colorPrimaryDark"
         />
 
   </FrameLayout>

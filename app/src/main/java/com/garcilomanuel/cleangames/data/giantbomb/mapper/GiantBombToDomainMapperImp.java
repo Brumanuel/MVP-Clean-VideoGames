@@ -44,6 +44,7 @@ public class GiantBombToDomainMapperImp implements GiantBombToDomainMapper {
     domainImage.setScreen_url(apiImage.getScreen_url());
     domainImage.setThumb_url(apiImage.getThumb_url());
     domainImage.setIcon_url(apiImage.getIcon_url());
+    domainImage.setTini_url(apiImage.getTiny_url());
 
     return domainImage;
   }

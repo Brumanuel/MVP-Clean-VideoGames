@@ -11,6 +11,8 @@ public interface PlatformsView extends View {
 
   void showPlatforms(List<Platform> platforms);
 
+  void showError(String error);
+
   void startLoading();
 
   void stopLoading();

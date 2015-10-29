@@ -16,6 +16,14 @@ public class Result {
   public Result() {
   }
 
+  public Result(int id, String name, String deck, Date release_date, Image image) {
+    this.id = id;
+    this.name = name;
+    this.deck = deck;
+    this.release_date = release_date;
+    this.image = image;
+  }
+
   public String getDeck() {
     return deck;
   }

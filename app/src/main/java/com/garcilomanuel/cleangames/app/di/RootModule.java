@@ -1,7 +1,7 @@
 package com.garcilomanuel.cleangames.app.di;
 
 import android.content.Context;
-import com.garcilomanuel.cleangames.app.base.MVPCleanGamesApplication;
+import com.garcilomanuel.cleangames.app.MVPCleanGamesApplication;
 import com.garcilomanuel.cleangames.domain.repository.PlatformRepositoryImp;
 import com.garcilomanuel.cleangames.ui.detail.view.DetailContainerActivity;
 import com.garcilomanuel.cleangames.ui.detail.view.DetailViewFragment;

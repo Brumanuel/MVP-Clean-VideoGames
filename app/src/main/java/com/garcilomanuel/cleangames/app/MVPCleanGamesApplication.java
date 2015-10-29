@@ -1,4 +1,4 @@
-package com.garcilomanuel.cleangames.app.base;
+package com.garcilomanuel.cleangames.app;
 
 import android.app.Application;
 import android.content.Context;
@@ -7,6 +7,8 @@ import dagger.ObjectGraph;
 
 /**
  * Created by Manuel García.
+ *
+ * Application with injection Dagger
  */
 public class MVPCleanGamesApplication extends Application {
 

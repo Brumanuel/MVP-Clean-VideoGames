@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import com.bumptech.glide.Glide;
@@ -56,7 +57,6 @@ public class DetailViewFragment extends BaseFragment implements DetailView {
   @Override
   public void onViewCreated(View view, Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
-    ButterKnife.bind(this, view);
   }
 
   @Override
@@ -65,5 +65,10 @@ public class DetailViewFragment extends BaseFragment implements DetailView {
     tvName.setText(platform.getName());
     tvAge.setText(Utils.parseDateToYear(platform.getRelease_date()));
     tvDescription.setText(platform.getDescription());
+  }
+
+  @Override
+  public void showError(String error) {
+    Toast.makeText(getActivity(), error, Toast.LENGTH_SHORT).show();
   }
 }

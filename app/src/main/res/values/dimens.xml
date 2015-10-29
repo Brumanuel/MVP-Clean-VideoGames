@@ -3,5 +3,6 @@
 
   <dimen name="margin_content_areas">6dp</dimen>
   <dimen name="double_margin_content_areas">12dp</dimen>
+  <dimen name="margin_card">12dp</dimen>
 
 </resources>

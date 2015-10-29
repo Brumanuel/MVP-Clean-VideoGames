@@ -2,15 +2,17 @@ package com.garcilomanuel.cleangames.domain.interactor.platform;
 
 import com.garcilomanuel.cleangames.app.executor.InteractorExecutor;
 import com.garcilomanuel.cleangames.app.executor.MainThreadExecutor;
-import com.garcilomanuel.cleangames.domain.interactor.AbstractInteractor;
+import com.garcilomanuel.cleangames.app.base.BaseInteractor;
 import com.garcilomanuel.cleangames.domain.model.Platform;
 import com.garcilomanuel.cleangames.domain.repository.PlatformRepository;
 import java.util.List;
 
 /**
  * Created by Manuel García.
+ *
+ * This interactor get all platforms from repository of platforms.
  */
-public class GetPlatformsImp extends AbstractInteractor implements GetPlatforms {
+public class GetPlatformsImp extends BaseInteractor implements GetPlatforms {
 
   private PlatformRepository platformRepository;
   private Callback callback;

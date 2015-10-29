@@ -12,6 +12,7 @@ import java.util.List;
  */
 public class Utils {
 
+  /*Sort arraylist of platfoms by release date up*/
   public static List<Platform> sortPalformByDateAsc(List<Platform> platforms) {
     Collections.sort(platforms, new Comparator<Platform>() {
       @Override
@@ -25,6 +26,7 @@ public class Utils {
     return platforms;
   }
 
+  /*Sort arraylist of platfoms by release date down*/
   public static List<Platform> sortPalformByDateDesc(List<Platform> platforms) {
     Collections.sort(platforms, new Comparator<Platform>() {
       @Override
@@ -38,6 +40,7 @@ public class Utils {
     return platforms;
   }
 
+  /**/
   public static String parseDateToYear(Date date) {
     if (date != null){
       return new SimpleDateFormat("yyyy").format(date);

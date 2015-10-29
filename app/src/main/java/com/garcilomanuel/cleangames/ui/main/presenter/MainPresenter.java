@@ -9,4 +9,5 @@ import com.garcilomanuel.cleangames.ui.main.view.MainView;
  */
 public abstract class MainPresenter extends BasePresenter<MainView> {
 
+    public abstract void onViewCreated();
 }

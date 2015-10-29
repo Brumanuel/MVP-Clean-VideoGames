@@ -1,4 +1,4 @@
-package com.garcilomanuel.cleangames.domain.interactor;
+package com.garcilomanuel.cleangames.app.base;
 
 import com.garcilomanuel.cleangames.app.executor.Interactor;
 import com.garcilomanuel.cleangames.app.executor.InteractorExecutor;
@@ -7,12 +7,12 @@ import com.garcilomanuel.cleangames.app.executor.MainThreadExecutor;
 /**
  * Created by Manuel García.
  */
-public abstract class AbstractInteractor implements Interactor {
+public abstract class BaseInteractor implements Interactor {
 
   private InteractorExecutor interactorExecutor;
   private MainThreadExecutor mainThreadExecutor;
 
-  public AbstractInteractor(InteractorExecutor interactorExecutor,
+  public BaseInteractor(InteractorExecutor interactorExecutor,
       MainThreadExecutor mainThreadExecutor) {
     this.interactorExecutor = interactorExecutor;
     this.mainThreadExecutor = mainThreadExecutor;

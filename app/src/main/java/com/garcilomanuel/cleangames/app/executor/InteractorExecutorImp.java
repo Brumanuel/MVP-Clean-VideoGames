@@ -7,6 +7,8 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Manuel García.
+ *
+ * ThreadPoolExecutor to launch the threads (Interactors).
  */
 public class InteractorExecutorImp implements InteractorExecutor {
 
