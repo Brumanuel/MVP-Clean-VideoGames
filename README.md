@@ -2,7 +2,7 @@
 ### Definition:
 The application is made using a api cloud of video games, for explain the use of Clean Architecture and MVP ( Model-View-Presenter).
 
-### Builded with:
+### Built with:
 - **Data Source**: Api for games Giant Bomb  http://www.giantbomb.com/api/
 - **Dependency Injection:** [Dagger](https://github.com/square/dagger) library by [Square](https://github.com/square)
 - **View Injection:** [Butter Knife](https://github.com/JakeWharton/butterknife) library by [Jake Wharton](https://github.com/JakeWharton)
