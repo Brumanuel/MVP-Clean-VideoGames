@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import butterknife.Bind;
-import butterknife.ButterKnife;
 import com.bumptech.glide.Glide;
 import com.garcilomanuel.cleangames.R;
 import com.garcilomanuel.cleangames.app.base.BaseFragment;
@@ -61,7 +60,7 @@ public class DetailViewFragment extends BaseFragment implements DetailView {
 
   @Override
   public void showDetail(Platform platform) {
-    Glide.with(getActivity()).load(platform.getImage().getSuper_url()).into(ivDetail);
+    Glide.with(getActivity()).load(platform.getImage().getSuperUrl()).into(ivDetail);
     tvName.setText(platform.getName());
     tvAge.setText(Utils.parseDateToYear(platform.getRelease_date()));
     tvDescription.setText(platform.getDescription());

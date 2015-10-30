@@ -68,7 +68,7 @@ public class PlatformsRecyclerAdapter
 
     holder.tvName.setText(platformInstance.getName());
     holder.tvDate.setText(Utils.parseDateToYear(platformInstance.getRelease_date()));
-    Glide.with(context).load(platformInstance.getImage().getSuper_url()).into(holder.ivThumbail);
+    Glide.with(context).load(platformInstance.getImage().getSuperUrl()).into(holder.ivThumbail);
     holder.fLayout.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {

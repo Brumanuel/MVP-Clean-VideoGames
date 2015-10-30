@@ -10,7 +10,7 @@ public class Platform {
   protected int id;
   protected String name;
   protected String description;
-  protected Date release_date;
+  protected Date releaseDate;
   protected Image image;
 
   public Platform() {
@@ -41,11 +41,11 @@ public class Platform {
   }
 
   public Date getRelease_date() {
-    return release_date;
+    return releaseDate;
   }
 
   public void setRelease_date(Date release_date) {
-    this.release_date = release_date;
+    this.releaseDate = release_date;
   }
 
   public Image getImage() {

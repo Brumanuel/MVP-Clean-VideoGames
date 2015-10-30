@@ -39,12 +39,12 @@ public class GiantBombToDomainMapperImpTest {
   }
 
   @Test public void testImageMapper(){
-    assertEquals(result.getImage().getIcon_url(),platformMapped.getImage().getIcon_url());
-    assertEquals(result.getImage().getMedium_url(),platformMapped.getImage().getMedium_url());
-    assertEquals(result.getImage().getScreen_url(),platformMapped.getImage().getScreen_url());
-    assertEquals(result.getImage().getSmall_url(),platformMapped.getImage().getSmall_url());
-    assertEquals(result.getImage().getSuper_url(),platformMapped.getImage().getSuper_url());
-    assertEquals(result.getImage().getThumb_url(),platformMapped.getImage().getThumb_url());
-    assertEquals(result.getImage().getTiny_url(),platformMapped.getImage().getTini_url());
+    assertEquals(result.getImage().getIcon_url(),platformMapped.getImage().getIconUrl());
+    assertEquals(result.getImage().getMedium_url(),platformMapped.getImage().getMediumUrl());
+    assertEquals(result.getImage().getScreen_url(),platformMapped.getImage().getScreenUrl());
+    assertEquals(result.getImage().getSmall_url(),platformMapped.getImage().getSmallUrl());
+    assertEquals(result.getImage().getSuper_url(),platformMapped.getImage().getSuperUrl());
+    assertEquals(result.getImage().getThumb_url(),platformMapped.getImage().getThumbUrl());
+    assertEquals(result.getImage().getTiny_url(),platformMapped.getImage().getTiniUrl());
   }
 }

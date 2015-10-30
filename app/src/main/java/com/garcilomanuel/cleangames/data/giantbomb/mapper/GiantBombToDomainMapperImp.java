@@ -37,14 +37,14 @@ public class GiantBombToDomainMapperImp implements GiantBombToDomainMapper {
       com.garcilomanuel.cleangames.data.giantbomb.model.Image apiImage) {
     Image domainImage = new Image();
 
-    domainImage.setIcon_url(apiImage.getIcon_url());
-    domainImage.setMedium_url(apiImage.getMedium_url());
-    domainImage.setSmall_url(apiImage.getSmall_url());
-    domainImage.setSuper_url(apiImage.getSuper_url());
-    domainImage.setScreen_url(apiImage.getScreen_url());
-    domainImage.setThumb_url(apiImage.getThumb_url());
-    domainImage.setIcon_url(apiImage.getIcon_url());
-    domainImage.setTini_url(apiImage.getTiny_url());
+    domainImage.setIconUrl(apiImage.getIcon_url());
+    domainImage.setMediumUrl(apiImage.getMedium_url());
+    domainImage.setSmallUrl(apiImage.getSmall_url());
+    domainImage.setSuperUrl(apiImage.getSuper_url());
+    domainImage.setScreenUrl(apiImage.getScreen_url());
+    domainImage.setThumbUrl(apiImage.getThumb_url());
+    domainImage.setIconUrl(apiImage.getIcon_url());
+    domainImage.setTiniUrl(apiImage.getTiny_url());
 
     return domainImage;
   }
